@@ -1,0 +1,12 @@
+variables
+{
+ message Message_Skey secu_msg;
+}
+
+on key 'i'
+{
+  //Secure ECU generates random Key and broadcasts when car is idle.
+  secu_msg.Signal_sKey = random(10);
+  output(secu_msg);
+}
+ 
