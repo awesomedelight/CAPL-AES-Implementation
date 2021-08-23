@@ -335,8 +335,6 @@ void AESEncryption(char plainText[], char expandedKey[], char cipher[])
 {
     char state[16];
    int counter = 0, loc;
-    //unsigned char * expandedKey = malloc(176);
-    //expandedKey = keyExpansion(Key);
     //key addition for the first round
     for (i = 0; i < 16; ++i)
     {
